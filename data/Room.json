@@ -1,0 +1,44 @@
+{ "results": [
+{
+  "name": "Room 103",
+  "nickname": "103",
+  "createdAt": "2013-07-29T01:14:48.719Z",
+  "updatedAt": "2013-09-05T20:40:18.278Z",
+  "objectId": "jC85VJ4fBg"
+},
+{
+  "name": "Room 102",
+  "nickname": "102",
+  "createdAt": "2013-07-29T01:14:44.903Z",
+  "updatedAt": "2013-09-05T20:40:27.559Z",
+  "objectId": "FNkltdqLyG"
+},
+{
+  "name": "101 ",
+  "nickname": "101",
+  "createdAt": "2013-07-29T01:14:40.969Z",
+  "updatedAt": "2013-09-05T20:40:36.791Z",
+  "objectId": "4zSux2lEPq"
+},
+{
+  "name": "Room 101 and 102",
+  "nickname": "k",
+  "createdAt": "2013-07-29T01:14:31.987Z",
+  "updatedAt": "2013-07-29T03:55:26.950Z",
+  "objectId": "z3ApR9v3X4"
+},
+{
+  "name": "Cafeteria Hall",
+  "nickname": "cafe",
+  "createdAt": "2013-07-31T05:31:25.432Z",
+  "updatedAt": "2013-08-28T16:27:52.563Z",
+  "objectId": "j2nn0A7lXR"
+},
+{
+  "name": "Gallehers Pub",
+  "nickname": "pub",
+  "createdAt": "2013-09-04T02:19:42.564Z",
+  "updatedAt": "2013-09-04T02:19:42.564Z",
+  "objectId": "3knGcdYRnx"
+}
+] }
