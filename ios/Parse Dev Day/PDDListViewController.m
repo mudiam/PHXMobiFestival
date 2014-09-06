@@ -19,6 +19,7 @@
 
 @interface PDDListViewController()
 @property (weak, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
 @property (strong, nonatomic) NSArray *rawTalks;
 @property (strong, nonatomic) NSDictionary *dataBySection;
 @property (strong, nonatomic) NSArray *sortedSections;
@@ -53,13 +54,36 @@
     listView.dataSource = self;
     self.tableView = listView;
     self.view = listView;
+    
+    
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refreshList) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:self.refreshControl];
+    
+    /*
+    UITableViewController *tableViewController = [[UITableViewController alloc] init];
+    tableViewController.tableView = self.tableView;
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refreshList) forControlEvents:UIControlEventValueChanged];
+    tableViewController.refreshControl = self.refreshControl;
+    */
+    
+    [self refreshList];
+}
+
+- (void)refreshList
+{
     [PDDTalk findAllInBackgroundWithBlock:^(NSArray *talks, NSError *error) {
         self.rawTalks = talks;
         [self _reorderTableViewSections];
+        
+        [self.refreshControl endRefreshing];
     }];
 }
 
