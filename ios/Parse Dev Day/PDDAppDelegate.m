@@ -10,6 +10,7 @@
 #import "PDDScheduleViewController.h"
 #import "PDDListViewController.h"
 #import "PDDSplashViewController.h"
+#import "PHXInfoViewController.h"
 
 #import "PDDTalk.h"
 #import "PDDSpeaker.h"
@@ -43,15 +44,25 @@
     // Override point for customization after application launch.
     UIViewController *listViewController = [[PDDListViewController alloc] init];
     UIViewController *favViewController = [[PDDScheduleViewController alloc] init];
+    UIViewController *infoViewController = [[PHXInfoViewController alloc] init];
+
 
     UINavigationController *listNavViewController = [[UINavigationController alloc] initWithRootViewController:listViewController];
     listNavViewController.navigationBarHidden = YES;
     UINavigationController *favNavViewController = [[UINavigationController alloc] initWithRootViewController:favViewController];
     favNavViewController.navigationBarHidden = YES;
+    
+#warning TODO: Kiran - Add new controller.
+
+    UINavigationController *infoNavViewController = [[UINavigationController alloc] initWithRootViewController:infoViewController];
+    infoNavViewController.navigationBarHidden = YES;
+    [infoNavViewController.navigationBar setBackgroundImage:[UIImage new]
+                                              forBarMetrics:UIBarMetricsDefault];
+    infoNavViewController.navigationBar.shadowImage = [UIImage new];
+    infoNavViewController.navigationBar.translucent = YES;
 
     self.tabBarController = [[UITabBarController alloc] init];
-#warning TODO: Kiran - Add new controller.
-    self.tabBarController.viewControllers = @[ listNavViewController, favNavViewController ];
+    self.tabBarController.viewControllers = @[ listNavViewController, favNavViewController,infoNavViewController ];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     
