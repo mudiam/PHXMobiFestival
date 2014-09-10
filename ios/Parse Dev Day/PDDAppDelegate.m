@@ -52,7 +52,6 @@
     UINavigationController *favNavViewController = [[UINavigationController alloc] initWithRootViewController:favViewController];
     favNavViewController.navigationBarHidden = YES;
     
-#warning TODO: Kiran - Add new controller.
 
     UINavigationController *infoNavViewController = [[UINavigationController alloc] initWithRootViewController:infoViewController];
     infoNavViewController.navigationBarHidden = YES;

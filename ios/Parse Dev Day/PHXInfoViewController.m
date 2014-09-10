@@ -26,7 +26,6 @@
 - (id)init {
     if (self = [super init]) {
         self.title = @"Sponsors";
-#warning TODO: Kiran - get a new image for the sponsors tab.
         self.tabBarItem.image = [UIImage imageNamed:@"178-city"];
     }
     return self;
