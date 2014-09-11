@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "PhxMobileFestival": {
+            "applicationId": "VP5fHQDm4PslLxdsjUgIWd4pZQSL73Tf1wZ2OhhV", 
+            "masterKey": "tw6e7I3Ztb3KGL2K86VbGNFwpV35yplk3PTVz5oE"
+        }, 
+        "_default": {
+            "link": "PhxMobileFestival"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.0"
+    }
+}
