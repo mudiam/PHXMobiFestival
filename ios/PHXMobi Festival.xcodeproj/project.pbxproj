@@ -92,6 +92,21 @@
 		9E6B2AD319BF718C006426D2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E37D42D19B6CD1600D3579A /* Icon.png */; };
 		9EC79DBC19BE34D0004EF603 /* 178-city.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC79DBA19BE34D0004EF603 /* 178-city.png */; };
 		9EC79DBD19BE34D0004EF603 /* 178-city@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC79DBB19BE34D0004EF603 /* 178-city@2x.png */; };
+		9EE2002819C2145100EB9343 /* PHXTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2002619C2145100EB9343 /* PHXTwitterViewController.m */; };
+		9EE2002919C2145100EB9343 /* PHXTwitterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2002719C2145100EB9343 /* PHXTwitterViewController.xib */; };
+		9EE2002D19C21C2F00EB9343 /* PHXMobiTalkRatingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2002C19C21C2F00EB9343 /* PHXMobiTalkRatingView.xib */; };
+		9EE2003619C21EBE00EB9343 /* StarEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2002E19C21EBE00EB9343 /* StarEmpty.png */; };
+		9EE2003719C21EBE00EB9343 /* StarEmpty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2002F19C21EBE00EB9343 /* StarEmpty@2x.png */; };
+		9EE2003819C21EBE00EB9343 /* StarEmptyLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2003019C21EBE00EB9343 /* StarEmptyLarge.png */; };
+		9EE2003919C21EBE00EB9343 /* StarEmptyLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2003119C21EBE00EB9343 /* StarEmptyLarge@2x.png */; };
+		9EE2003A19C21EBE00EB9343 /* StarFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2003219C21EBE00EB9343 /* StarFull.png */; };
+		9EE2003B19C21EBE00EB9343 /* StarFull@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2003319C21EBE00EB9343 /* StarFull@2x.png */; };
+		9EE2003C19C21EBE00EB9343 /* StarFullLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2003419C21EBE00EB9343 /* StarFullLarge.png */; };
+		9EE2003D19C21EBE00EB9343 /* StarFullLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2003519C21EBE00EB9343 /* StarFullLarge@2x.png */; };
+		9EE2004119C21ED800EB9343 /* DYRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2004019C21ED800EB9343 /* DYRateView.m */; };
+		9EE2004419C2205600EB9343 /* PHXMobiTalkRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2004319C2205600EB9343 /* PHXMobiTalkRatingView.m */; };
+		9EE2004719C2442500EB9343 /* 498-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2004519C2442500EB9343 /* 498-twitter.png */; };
+		9EE2004819C2442500EB9343 /* 498-twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE2004619C2442500EB9343 /* 498-twitter@2x.png */; };
 		E786C00A17C3DD0A0059950B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E786C00917C3DD0A0059950B /* libz.dylib */; };
 /* End PBXBuildFile section */
 
@@ -214,6 +229,24 @@
 		9E45DDA919AAE3EA00939255 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		9EC79DBA19BE34D0004EF603 /* 178-city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "178-city.png"; sourceTree = "<group>"; };
 		9EC79DBB19BE34D0004EF603 /* 178-city@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "178-city@2x.png"; sourceTree = "<group>"; };
+		9EE2002519C2145100EB9343 /* PHXTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHXTwitterViewController.h; sourceTree = "<group>"; };
+		9EE2002619C2145100EB9343 /* PHXTwitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHXTwitterViewController.m; sourceTree = "<group>"; };
+		9EE2002719C2145100EB9343 /* PHXTwitterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHXTwitterViewController.xib; sourceTree = "<group>"; };
+		9EE2002C19C21C2F00EB9343 /* PHXMobiTalkRatingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PHXMobiTalkRatingView.xib; sourceTree = "<group>"; };
+		9EE2002E19C21EBE00EB9343 /* StarEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarEmpty.png; sourceTree = "<group>"; };
+		9EE2002F19C21EBE00EB9343 /* StarEmpty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarEmpty@2x.png"; sourceTree = "<group>"; };
+		9EE2003019C21EBE00EB9343 /* StarEmptyLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarEmptyLarge.png; sourceTree = "<group>"; };
+		9EE2003119C21EBE00EB9343 /* StarEmptyLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarEmptyLarge@2x.png"; sourceTree = "<group>"; };
+		9EE2003219C21EBE00EB9343 /* StarFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarFull.png; sourceTree = "<group>"; };
+		9EE2003319C21EBE00EB9343 /* StarFull@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarFull@2x.png"; sourceTree = "<group>"; };
+		9EE2003419C21EBE00EB9343 /* StarFullLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarFullLarge.png; sourceTree = "<group>"; };
+		9EE2003519C21EBE00EB9343 /* StarFullLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "StarFullLarge@2x.png"; sourceTree = "<group>"; };
+		9EE2003F19C21ED800EB9343 /* DYRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYRateView.h; sourceTree = "<group>"; };
+		9EE2004019C21ED800EB9343 /* DYRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYRateView.m; sourceTree = "<group>"; };
+		9EE2004219C2205600EB9343 /* PHXMobiTalkRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHXMobiTalkRatingView.h; sourceTree = "<group>"; };
+		9EE2004319C2205600EB9343 /* PHXMobiTalkRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PHXMobiTalkRatingView.m; sourceTree = "<group>"; };
+		9EE2004519C2442500EB9343 /* 498-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "498-twitter.png"; sourceTree = "<group>"; };
+		9EE2004619C2442500EB9343 /* 498-twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "498-twitter@2x.png"; sourceTree = "<group>"; };
 		E786C00917C3DD0A0059950B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -274,6 +307,7 @@
 		975C725817A9BB890004F0CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9EE2003E19C21ED800EB9343 /* DYRateView */,
 				970E909D17AB066C00E7E897 /* View Elements */,
 				9735832F17BDAC3C0001DBF9 /* PDDSplashView.h */,
 				9735833017BDAC3C0001DBF9 /* PDDSplashView.m */,
@@ -287,6 +321,9 @@
 				975C726317A9E1320004F0CC /* PDDTalkView.m */,
 				975C726E17AADD280004F0CC /* PDDSpeakerView.h */,
 				975C726F17AADD280004F0CC /* PDDSpeakerView.m */,
+				9EE2002C19C21C2F00EB9343 /* PHXMobiTalkRatingView.xib */,
+				9EE2004219C2205600EB9343 /* PHXMobiTalkRatingView.h */,
+				9EE2004319C2205600EB9343 /* PHXMobiTalkRatingView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -380,6 +417,9 @@
 				975C726C17AADD1E0004F0CC /* PDDSpeakerViewController.m */,
 				9E29BF8319BAF86D0041D3E8 /* PHXInfoViewController.h */,
 				9E29BF8419BAF86D0041D3E8 /* PHXInfoViewController.m */,
+				9EE2002519C2145100EB9343 /* PHXTwitterViewController.h */,
+				9EE2002619C2145100EB9343 /* PHXTwitterViewController.m */,
+				9EE2002719C2145100EB9343 /* PHXTwitterViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -388,7 +428,17 @@
 			isa = PBXGroup;
 			children = (
 				9E29BF8C19BBD5C20041D3E8 /* Sponsors-568h@2x.png */,
+				9EE2004519C2442500EB9343 /* 498-twitter.png */,
+				9EE2004619C2442500EB9343 /* 498-twitter@2x.png */,
 				9E29BF8719BAF9C20041D3E8 /* Sponsors.png */,
+				9EE2002E19C21EBE00EB9343 /* StarEmpty.png */,
+				9EE2002F19C21EBE00EB9343 /* StarEmpty@2x.png */,
+				9EE2003019C21EBE00EB9343 /* StarEmptyLarge.png */,
+				9EE2003119C21EBE00EB9343 /* StarEmptyLarge@2x.png */,
+				9EE2003219C21EBE00EB9343 /* StarFull.png */,
+				9EE2003319C21EBE00EB9343 /* StarFull@2x.png */,
+				9EE2003419C21EBE00EB9343 /* StarFullLarge.png */,
+				9EE2003519C21EBE00EB9343 /* StarFullLarge@2x.png */,
 				9EC79DBA19BE34D0004EF603 /* 178-city.png */,
 				9EC79DBB19BE34D0004EF603 /* 178-city@2x.png */,
 				9E29BF8819BAF9C20041D3E8 /* Sponsors@2x.png */,
@@ -456,6 +506,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		9EE2003E19C21ED800EB9343 /* DYRateView */ = {
+			isa = PBXGroup;
+			children = (
+				9EE2003F19C21ED800EB9343 /* DYRateView.h */,
+				9EE2004019C21ED800EB9343 /* DYRateView.m */,
+			);
+			path = DYRateView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -514,34 +573,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				97CA1C2F17C2C8C1000F4D10 /* logo.png in Resources */,
+				9EE2003B19C21EBE00EB9343 /* StarFull@2x.png in Resources */,
 				97CE45AD17C434FD00F1F128 /* AppiPhone.png in Resources */,
 				9744644017C2ED61009AF79B /* coffee@2x.png in Resources */,
 				97C5F56D17A343AE0071C5EC /* InfoPlist.strings in Resources */,
 				9744644217C2ED61009AF79B /* croissant@2x.png in Resources */,
+				9EE2002D19C21C2F00EB9343 /* PHXMobiTalkRatingView.xib in Resources */,
 				974463E417C2E50A009AF79B /* location.png in Resources */,
 				97CE45A517C434BC00F1F128 /* Settings@2x.png in Resources */,
 				9EC79DBC19BE34D0004EF603 /* 178-city.png in Resources */,
 				9E6B2AD319BF718C006426D2 /* Icon.png in Resources */,
+				9EE2003D19C21EBE00EB9343 /* StarFullLarge@2x.png in Resources */,
+				9EE2003919C21EBE00EB9343 /* StarEmptyLarge@2x.png in Resources */,
 				9744644517C2ED61009AF79B /* lunch.png in Resources */,
 				9E29BF8B19BAF9C20041D3E8 /* Sponsors@2x.png in Resources */,
 				97CE45A317C434B800F1F128 /* Settings.png in Resources */,
 				9EC79DBD19BE34D0004EF603 /* 178-city@2x.png in Resources */,
 				9744644A17C2EDAC009AF79B /* show@2x.png in Resources */,
 				974463E317C2E50A009AF79B /* clock@2x.png in Resources */,
+				9EE2003A19C21EBE00EB9343 /* StarFull.png in Resources */,
 				97C5F57517A343AE0071C5EC /* Default.png in Resources */,
+				9EE2003C19C21EBE00EB9343 /* StarFullLarge.png in Resources */,
 				97C5F57717A343AE0071C5EC /* Default@2x.png in Resources */,
 				9E29BF8A19BAF9C20041D3E8 /* Sponsors.png in Resources */,
 				9744644417C2ED61009AF79B /* drink@2x.png in Resources */,
 				97C5F57917A343AE0071C5EC /* Default-568h@2x.png in Resources */,
 				974463E217C2E50A009AF79B /* clock.png in Resources */,
+				9EE2003819C21EBE00EB9343 /* StarEmptyLarge.png in Resources */,
+				9EE2004819C2442500EB9343 /* 498-twitter@2x.png in Resources */,
 				9744639717C2CC1A009AF79B /* BG.png in Resources */,
 				9744644917C2EDAC009AF79B /* show.png in Resources */,
 				9744644317C2ED61009AF79B /* drink.png in Resources */,
 				97CE45A917C434D300F1F128 /* AppiPhone7@2x.png in Resources */,
+				9EE2003619C21EBE00EB9343 /* StarEmpty.png in Resources */,
 				9744644117C2ED61009AF79B /* croissant.png in Resources */,
 				9744644617C2ED61009AF79B /* lunch@2x.png in Resources */,
 				974463E517C2E50A009AF79B /* location@2x.png in Resources */,
 				97CA1C2917C2C624000F4D10 /* loginBg@2x.png in Resources */,
+				9EE2004719C2442500EB9343 /* 498-twitter.png in Resources */,
 				97CA1C3017C2C8C1000F4D10 /* logo@2x.png in Resources */,
 				9744639817C2CC1A009AF79B /* BG@2x.png in Resources */,
 				9744643F17C2ED61009AF79B /* coffee.png in Resources */,
@@ -549,11 +618,13 @@
 				973B6B5D17C3F23400A954B8 /* star_filled@2x.png in Resources */,
 				973B6B5E17C3F23400A954B8 /* star.png in Resources */,
 				973B6B5F17C3F23400A954B8 /* star@2x.png in Resources */,
+				9EE2003719C21EBE00EB9343 /* StarEmpty@2x.png in Resources */,
 				973B6B6017C3F23400A954B8 /* talks.png in Resources */,
 				973B6B6117C3F23400A954B8 /* talks@2x.png in Resources */,
 				97CE45AB17C434EA00F1F128 /* AppiPhone@2x.png in Resources */,
 				97CE45A717C434C800F1F128 /* Spotlight@2x.png in Resources */,
 				97C00BCB17C52DED007936DA /* button.png in Resources */,
+				9EE2002919C2145100EB9343 /* PHXTwitterViewController.xib in Resources */,
 				97C00BCC17C52DED007936DA /* button@2x.png in Resources */,
 				972E1D0D17C54346006EAE8C /* loginBg.png in Resources */,
 				9E29BF8D19BBD5C20041D3E8 /* Sponsors-568h@2x.png in Resources */,
@@ -582,10 +653,13 @@
 				9735832E17BDA2380001DBF9 /* PDDSplashViewController.m in Sources */,
 				975C726117A9E1260004F0CC /* PDDTalkViewController.m in Sources */,
 				974463A117C2D155009AF79B /* PDDContentView.m in Sources */,
+				9EE2002819C2145100EB9343 /* PHXTwitterViewController.m in Sources */,
 				975C726417A9E1320004F0CC /* PDDTalkView.m in Sources */,
+				9EE2004119C21ED800EB9343 /* DYRateView.m in Sources */,
 				97CA1C1F17BED3A0000F4D10 /* PDDPhotoView.m in Sources */,
 				97CA1C2C17C2C69F000F4D10 /* UIView+ParseDevDay.m in Sources */,
 				975C726D17AADD1E0004F0CC /* PDDSpeakerViewController.m in Sources */,
+				9EE2004419C2205600EB9343 /* PHXMobiTalkRatingView.m in Sources */,
 				975C727017AADD280004F0CC /* PDDSpeakerView.m in Sources */,
 				97717EE517AAE9C6005BB328 /* PDDScheduleView.m in Sources */,
 				970E909C17AB01D600E7E897 /* PDDBaseListViewController.m in Sources */,

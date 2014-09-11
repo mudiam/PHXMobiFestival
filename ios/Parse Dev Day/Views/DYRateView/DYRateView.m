@@ -58,8 +58,8 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
         self.opaque = NO;
         self.backgroundColor = [UIColor clearColor];
 
-        _fullStarImage = [fullStarImage retain];
-        _emptyStarImage = [emptyStarImage retain];
+        _fullStarImage = fullStarImage;
+        _emptyStarImage = emptyStarImage ;
         
         [self commonSetup];
     }
@@ -69,19 +69,15 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
 - (id)initWithCoder:(NSCoder *)decoder {
     self = [super initWithCoder:decoder];
     if (self) {
-        _fullStarImage = [[UIImage imageNamed:DefaultFullStarImageFilename] retain];
-        _emptyStarImage = [[UIImage imageNamed:DefaultEmptyStarImageFilename] retain];
+        _fullStarImage = [UIImage imageNamed:DefaultFullStarImageFilename] ;
+        _emptyStarImage = [UIImage imageNamed:DefaultEmptyStarImageFilename] ;
 
         [self commonSetup];
     }
     return self;
 }
 
-- (void)dealloc {
-    [_fullStarImage release]; _fullStarImage = nil;
-    [_emptyStarImage release]; _emptyStarImage = nil;
-    [super dealloc];
-}
+
 
 - (void)commonSetup
 {
@@ -153,8 +149,7 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
 - (void)setFullStarImage:(UIImage *)fullStarImage
 {
     if (fullStarImage != _fullStarImage) {
-        [_fullStarImage release];
-        _fullStarImage = [fullStarImage retain];
+        _fullStarImage = fullStarImage ;
         [self setNeedsDisplay];
     }
 }
@@ -162,8 +157,7 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
 - (void)setEmptyStarImage:(UIImage *)emptyStarImage
 {
     if (emptyStarImage != _emptyStarImage) {
-        [_emptyStarImage release];
-        _emptyStarImage = [emptyStarImage retain];
+        _emptyStarImage = emptyStarImage ;
         [self setNeedsDisplay];
     }
 }

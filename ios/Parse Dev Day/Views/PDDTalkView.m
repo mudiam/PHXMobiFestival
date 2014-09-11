@@ -11,6 +11,7 @@
 #import "PDDSpeaker.h"
 #import "PDDFavoriteButton.h"
 #import "PDDSpeakerButton.h"
+#import "PHXMobiTalkRatingView.h"
 
 #import "UIColor+ParseDevDay.h"
 #import "UILabel+ParseDevDay.h"
@@ -64,6 +65,13 @@
         abstractLabel.preferredMaxLayoutWidth = 280;
         abstractLabel.numberOfLines = 0;
         [self addSubview:abstractLabel];
+        
+//        NSArray *views =[[NSBundle mainBundle] loadNibNamed:@"PHXMobiTalkRatingView" owner:self options:nil];
+//        NSLog(@"view = %@", views);
+//        [self addSubview:views.lastObject];
+//        
+
+
 
         [favoriteButton addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[favoriteButton(37)]"
                                                                                options:0
@@ -111,6 +119,10 @@
             viewDict[idString] = button;
             [speakerFormats addObject:[NSString stringWithFormat:@"[%@]", idString]];
         }];
+        
+        
+        
+        
         self.speakerButtons = [[viewDict allValues] filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id obj, NSDictionary *bindings) {
             return ![obj isEqual:headerView] && ![obj isEqual:abstractLabel];
         }]];

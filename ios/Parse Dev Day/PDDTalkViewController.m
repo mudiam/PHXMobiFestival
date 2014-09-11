@@ -17,6 +17,7 @@
 @property (strong, nonatomic) PDDTalk *talk;
 @property (weak, nonatomic) PDDTalkView *talkView;
 
+
 - (void)favorite:(id)sender;
 - (void)showSpeaker:(id)sender;
 @end

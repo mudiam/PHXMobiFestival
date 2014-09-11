@@ -11,6 +11,7 @@
 #import "PDDListViewController.h"
 #import "PDDSplashViewController.h"
 #import "PHXInfoViewController.h"
+#import "PHXTwitterViewController.h"
 
 #import "PDDTalk.h"
 #import "PDDSpeaker.h"
@@ -45,6 +46,8 @@
     UIViewController *listViewController = [[PDDListViewController alloc] init];
     UIViewController *favViewController = [[PDDScheduleViewController alloc] init];
     UIViewController *infoViewController = [[PHXInfoViewController alloc] init];
+    UIViewController *twitterViewController = [[PHXTwitterViewController alloc] init];
+    
 
 
     UINavigationController *listNavViewController = [[UINavigationController alloc] initWithRootViewController:listViewController];
@@ -59,9 +62,13 @@
                                               forBarMetrics:UIBarMetricsDefault];
     infoNavViewController.navigationBar.shadowImage = [UIImage new];
     infoNavViewController.navigationBar.translucent = YES;
+    
+    UINavigationController *twitterNavViewController = [[UINavigationController alloc] initWithRootViewController:twitterViewController];
+    twitterNavViewController.navigationBarHidden = YES;
+    twitterNavViewController.toolbarHidden = NO;
 
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[ listNavViewController, favNavViewController,infoNavViewController ];
+    self.tabBarController.viewControllers = @[ listNavViewController, favNavViewController,twitterNavViewController , infoNavViewController  ];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     

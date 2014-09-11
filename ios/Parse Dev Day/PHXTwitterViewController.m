@@ -8,15 +8,36 @@
 
 #import "PHXTwitterViewController.h"
 
-@interface PHXTwitterViewController ()
 
-@end
+@implementation PHXTwitterViewController{
+    
+    __weak IBOutlet UIWebView *_twitterWebView;
+    
+    __weak IBOutlet UIBarButtonItem *backBarButton;
+    __weak IBOutlet UIBarButtonItem *spacer1BarButton;
+    __weak IBOutlet UIBarButtonItem *stopBarButton;
+    __weak IBOutlet UIBarButtonItem *spacer2BarButton;
+    __weak IBOutlet UIBarButtonItem *refreshBarButton;
+    __weak IBOutlet UIBarButtonItem *spacer3BarButton;
+    __weak IBOutlet UIBarButtonItem *fwdBarButton;
 
-@implementation PHXTwitterViewController
+}
+- (id)init {
+    if (self = [super init]) {
+        self.title = @"#phxmobi";
+        self.tabBarItem.image = [UIImage imageNamed:@"498-twitter"];
+        
+    }
+    return self;
+}
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSURLRequest *url =  [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://phxmobifestival.parseapp.com/twitter.html"]];
+    [_twitterWebView loadRequest:url];
+    self.toolbarItems = @[backBarButton,spacer1BarButton,stopBarButton,spacer2BarButton,refreshBarButton,spacer3BarButton,fwdBarButton];
+
 }
 
 - (void)didReceiveMemoryWarning {

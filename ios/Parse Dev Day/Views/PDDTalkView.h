@@ -11,6 +11,7 @@
 @property (weak, nonatomic) UIButton *favoriteButton;
 @property (strong, nonatomic) NSArray *speakerButtons;
 
+
 - (id)initWithTalk:(PDDTalk *)talk;
 
 @end

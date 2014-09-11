@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DYRateView.h"
 
-@interface PHXMobiTalkRatingView : UIView
+@class PDDTalk;
 
+@interface PHXMobiTalkRatingView : UIView <DYRateViewDelegate>
+@property (nonatomic,strong) PDDTalk *talk;
 @end
