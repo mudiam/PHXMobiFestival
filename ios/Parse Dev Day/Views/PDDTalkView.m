@@ -66,12 +66,15 @@
         abstractLabel.numberOfLines = 0;
         [self addSubview:abstractLabel];
         
-//        NSArray *views =[[NSBundle mainBundle] loadNibNamed:@"PHXMobiTalkRatingView" owner:self options:nil];
-//        NSLog(@"view = %@", views);
-//        [self addSubview:views.lastObject];
-//        
+        NSArray *ratingView =[[NSBundle mainBundle] loadNibNamed:@"PHXMobiTalkRatingView" owner:self options:nil];
+        PHXMobiTalkRatingView *phxTalkRatingView = ratingView.lastObject;
+        [phxTalkRatingView setBounds:CGRectMake(0 , 0, 0, 0)];
+        [phxTalkRatingView setTranslatesAutoresizingMaskIntoConstraints:NO];
+        [phxTalkRatingView setAutoresizingMask:UIViewAutoresizingNone];
+        [self addSubview:phxTalkRatingView];
+        
 
-
+        
 
         [favoriteButton addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[favoriteButton(37)]"
                                                                                options:0
@@ -89,14 +92,30 @@
                                                                            options:NSLayoutFormatAlignAllLeft
                                                                            metrics:nil
                                                                              views:NSDictionaryOfVariableBindings(titleLabel, timeIcon)]];
+        
+
+
+        
+
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[abstractLabel]-|"
                                                                            options:0
                                                                            metrics:nil
                                                                              views:NSDictionaryOfVariableBindings(abstractLabel)]];
+        
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|[headerView(320)]|"
                                                                      options:0
                                                                      metrics:nil
                                                                        views:NSDictionaryOfVariableBindings(headerView)]];
+        
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[phxTalkRatingView(320)]-|"
+                                                                     options:0
+                                                                     metrics:nil
+                                                                       views:NSDictionaryOfVariableBindings(phxTalkRatingView)]];
+        
+        
+        
+    
+        
 
         // Set Talk data
         titleLabel.text = talk.title;
@@ -106,7 +125,7 @@
         self.favoriteButton.hidden = talk.alwaysFavorite;
         self.favoriteButton.selected = [talk isFavorite];
 
-        NSMutableDictionary *viewDict = [NSMutableDictionary dictionaryWithDictionary:NSDictionaryOfVariableBindings(headerView, abstractLabel)];
+        NSMutableDictionary *viewDict = [NSMutableDictionary dictionaryWithDictionary:NSDictionaryOfVariableBindings(headerView, abstractLabel,phxTalkRatingView)];
         __block NSMutableArray *speakerFormats = [NSMutableArray array];
         [talk.speakers enumerateObjectsUsingBlock:^(PDDSpeaker *speaker, NSUInteger idx, BOOL *stop) {
             PDDSpeakerButton *button = [[PDDSpeakerButton alloc] initWithSpeaker:speaker];
@@ -124,9 +143,9 @@
         
         
         self.speakerButtons = [[viewDict allValues] filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id obj, NSDictionary *bindings) {
-            return ![obj isEqual:headerView] && ![obj isEqual:abstractLabel];
+            return ![obj isEqual:headerView] && ![obj isEqual:abstractLabel] && ![obj isEqual:phxTalkRatingView];
         }]];
-        NSString *formatString = [NSString stringWithFormat:@"V:|[headerView]-20-[abstractLabel]-20-%@|", [speakerFormats componentsJoinedByString:@""]];
+        NSString *formatString = [NSString stringWithFormat:@"V:|[headerView]-20-[abstractLabel]-20-[phxTalkRatingView]-20-%@|", [speakerFormats componentsJoinedByString:@""]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:formatString
                                                                      options:NSLayoutFormatAlignAllCenterX
                                                                      metrics:nil
