@@ -26,6 +26,7 @@
 -(void) awakeFromNib{
     _dyrateView.delegate = self;
     _dyrateView.editable = YES;
+    _dyrateView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)rateView:(DYRateView *)rateView changedToNewRate:(NSNumber *)rate{

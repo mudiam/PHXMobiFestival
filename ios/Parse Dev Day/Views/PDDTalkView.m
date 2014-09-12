@@ -107,7 +107,7 @@
                                                                      metrics:nil
                                                                        views:NSDictionaryOfVariableBindings(headerView)]];
         
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[phxTalkRatingView(320)]-|"
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-[phxTalkRatingView]-|"
                                                                      options:0
                                                                      metrics:nil
                                                                        views:NSDictionaryOfVariableBindings(phxTalkRatingView)]];
@@ -145,7 +145,7 @@
         self.speakerButtons = [[viewDict allValues] filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id obj, NSDictionary *bindings) {
             return ![obj isEqual:headerView] && ![obj isEqual:abstractLabel] && ![obj isEqual:phxTalkRatingView];
         }]];
-        NSString *formatString = [NSString stringWithFormat:@"V:|[headerView]-20-[abstractLabel]-20-[phxTalkRatingView]-20-%@|", [speakerFormats componentsJoinedByString:@""]];
+        NSString *formatString = [NSString stringWithFormat:@"V:|[headerView]-20-[abstractLabel]-20-[phxTalkRatingView(280)]-20-%@|", [speakerFormats componentsJoinedByString:@""]];
         [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:formatString
                                                                      options:NSLayoutFormatAlignAllCenterX
                                                                      metrics:nil
