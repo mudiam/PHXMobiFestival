@@ -27,8 +27,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import "DYRateView.h"
 
-static NSString *DefaultFullStarImageFilename = @"StarFull.png";
-static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
+static NSString *DefaultFullStarImageFilename = @"StarFullLarge.png";
+static NSString *DefaultEmptyStarImageFilename = @"StarEmptyLarge.png";
 
 @interface DYRateView ()
 
@@ -83,9 +83,9 @@ static NSString *DefaultEmptyStarImageFilename = @"StarEmpty.png";
 {
     // Include the initialization code that is common to initWithFrame:
     // and initWithCoder: here.
-    _padding = 4;
+    _padding = 10;
     _numOfStars = 5;
-    self.alignment = RateViewAlignmentLeft;
+    self.alignment = RateViewAlignmentCenter;
     self.editable = NO;
 }
 

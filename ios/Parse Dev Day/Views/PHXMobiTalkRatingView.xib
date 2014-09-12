@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PHXMobiTalkRatingView">
-            <rect key="frame" x="0.0" y="0.0" width="304" height="192"/>
+            <rect key="frame" x="0.0" y="0.0" width="304" height="173"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vc-Ly-ypl" customClass="DYRateView">
-                    <rect key="frame" x="8" y="8" width="288" height="40"/>
+                    <rect key="frame" x="8" y="8" width="288" height="20"/>
                     <color key="backgroundColor" red="0.31702771759999998" green="0.6162109375" blue="0.080882722990000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="ctw-Xq-vxy"/>
+                        <constraint firstAttribute="height" constant="20" id="ctw-Xq-vxy"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zb-Xi-GNo">
-                    <rect key="frame" x="8" y="56" width="288" height="21"/>
+                    <rect key="frame" x="8" y="36" width="288" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="luy-dk-EyO"/>
                     </constraints>
@@ -28,13 +28,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7j-SM-WQK">
-                    <rect key="frame" x="8" y="79" width="288" height="70"/>
+                    <rect key="frame" x="8" y="65" width="288" height="70"/>
                     <color key="backgroundColor" red="0.94565217391304346" green="0.94565217391304346" blue="0.94565217391304346" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-xX-rlm">
-                    <rect key="frame" x="247" y="157" width="49" height="30"/>
+                    <rect key="frame" x="247" y="143" width="49" height="30"/>
                     <state key="normal" title="Rate it!">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -47,26 +47,23 @@
             <constraints>
                 <constraint firstItem="2zb-Xi-GNo" firstAttribute="trailing" secondItem="g9s-xX-rlm" secondAttribute="trailing" id="BZi-AS-O14"/>
                 <constraint firstItem="6Vc-Ly-ypl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="H8b-Sd-UGF"/>
-                <constraint firstItem="y7j-SM-WQK" firstAttribute="top" secondItem="2zb-Xi-GNo" secondAttribute="bottom" constant="2" id="HWj-ds-Qan"/>
+                <constraint firstItem="y7j-SM-WQK" firstAttribute="top" secondItem="2zb-Xi-GNo" secondAttribute="bottom" constant="8" id="HWj-ds-Qan"/>
                 <constraint firstItem="y7j-SM-WQK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Qq2-kR-KPI"/>
                 <constraint firstItem="2zb-Xi-GNo" firstAttribute="top" secondItem="6Vc-Ly-ypl" secondAttribute="bottom" constant="8" id="RFZ-8E-LoP"/>
-                <constraint firstAttribute="bottom" secondItem="g9s-xX-rlm" secondAttribute="bottom" constant="5" id="ThL-7w-u2E"/>
+                <constraint firstAttribute="bottom" secondItem="g9s-xX-rlm" secondAttribute="bottom" id="ThL-7w-u2E"/>
                 <constraint firstAttribute="trailing" secondItem="y7j-SM-WQK" secondAttribute="trailing" constant="8" id="YNu-Pp-COT"/>
                 <constraint firstItem="2zb-Xi-GNo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="eCM-QF-wSw"/>
                 <constraint firstAttribute="trailing" secondItem="6Vc-Ly-ypl" secondAttribute="trailing" constant="8" id="fhX-br-8UC"/>
-                <constraint firstItem="2zb-Xi-GNo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="56" id="hbg-1E-kUy"/>
+                <constraint firstItem="2zb-Xi-GNo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="36" id="hbg-1E-kUy"/>
                 <constraint firstAttribute="trailing" secondItem="2zb-Xi-GNo" secondAttribute="trailing" constant="8" id="sqx-zd-aWs"/>
                 <constraint firstItem="g9s-xX-rlm" firstAttribute="top" secondItem="y7j-SM-WQK" secondAttribute="bottom" constant="8" id="vIt-2y-SGD"/>
             </constraints>
-            <nil key="simulatedStatusBarMetrics"/>
-            <nil key="simulatedTopBarMetrics"/>
-            <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="_comments" destination="y7j-SM-WQK" id="vc5-YN-zl9"/>
+                <outlet property="_commentsLabel" destination="2zb-Xi-GNo" id="ede-Hh-Lkx"/>
                 <outlet property="_dyrateView" destination="6Vc-Ly-ypl" id="tRe-lD-qCa"/>
             </connections>
-            <point key="canvasLocation" x="-254" y="-107"/>
         </view>
     </objects>
 </document>

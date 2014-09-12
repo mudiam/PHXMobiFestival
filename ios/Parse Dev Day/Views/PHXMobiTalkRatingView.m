@@ -9,11 +9,13 @@
 #import "PHXMobiTalkRatingView.h"
 #import "DYRateView.h"
 #import "PDDTalk.h"
+#import "UIColor+ParseDevDay.h"
 
 @implementation PHXMobiTalkRatingView{
     
     __weak IBOutlet DYRateView *_dyrateView;
     __weak IBOutlet UITextView *_comments;
+    __weak IBOutlet UILabel *_commentsLabel;
     
 }
 
@@ -27,6 +29,7 @@
     _dyrateView.delegate = self;
     _dyrateView.editable = YES;
     _dyrateView.backgroundColor = [UIColor clearColor];
+    _commentsLabel.textColor = [UIColor pddTextColor];
 }
 
 - (void)rateView:(DYRateView *)rateView changedToNewRate:(NSNumber *)rate{

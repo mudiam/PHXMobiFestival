@@ -72,8 +72,10 @@
         [phxTalkRatingView setTranslatesAutoresizingMaskIntoConstraints:NO];
         [phxTalkRatingView setAutoresizingMask:UIViewAutoresizingNone];
         [self addSubview:phxTalkRatingView];
-        
 
+        //since PHXMobiTalkRatingView has a textView, we need to dismiss the keyboard when scrolling the view
+
+        self.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
         
 
         [favoriteButton addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[favoriteButton(37)]"
