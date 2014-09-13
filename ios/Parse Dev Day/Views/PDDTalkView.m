@@ -68,6 +68,7 @@
         
         NSArray *ratingView =[[NSBundle mainBundle] loadNibNamed:@"PHXMobiTalkRatingView" owner:self options:nil];
         PHXMobiTalkRatingView *phxTalkRatingView = ratingView.lastObject;
+        phxTalkRatingView.talk = talk;
         [phxTalkRatingView setBounds:CGRectMake(0 , 0, 0, 0)];
         [phxTalkRatingView setTranslatesAutoresizingMaskIntoConstraints:NO];
         [phxTalkRatingView setAutoresizingMask:UIViewAutoresizingNone];

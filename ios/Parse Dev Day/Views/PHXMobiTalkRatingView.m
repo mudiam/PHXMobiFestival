@@ -37,10 +37,11 @@
 }
 
 - (IBAction)rateItButtonPressed:(id)sender {
-    PFObject *rating = [PFObject objectWithClassName:@"rating"];
+    PFObject *rating = [PFObject objectWithClassName:@"Rating"];
     rating[@"talk"] = self.talk ;
     rating[@"starrting"] = [NSNumber numberWithFloat:_dyrateView.rate];
     rating[@"comments"] = _comments.text;
+    
     [rating saveEventually];
 }
 

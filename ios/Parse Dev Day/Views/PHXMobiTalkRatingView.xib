@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -33,11 +32,9 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-xX-rlm">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-xX-rlm">
                     <rect key="frame" x="247" y="143" width="49" height="30"/>
-                    <state key="normal" title="Rate it!">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                    <state key="normal" title="Rate it!"/>
                     <connections>
                         <action selector="rateItButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="uZm-hI-vLL"/>
                     </connections>
@@ -58,12 +55,19 @@
                 <constraint firstAttribute="trailing" secondItem="2zb-Xi-GNo" secondAttribute="trailing" constant="8" id="sqx-zd-aWs"/>
                 <constraint firstItem="g9s-xX-rlm" firstAttribute="top" secondItem="y7j-SM-WQK" secondAttribute="bottom" constant="8" id="vIt-2y-SGD"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="_comments" destination="y7j-SM-WQK" id="vc5-YN-zl9"/>
                 <outlet property="_commentsLabel" destination="2zb-Xi-GNo" id="ede-Hh-Lkx"/>
                 <outlet property="_dyrateView" destination="6Vc-Ly-ypl" id="tRe-lD-qCa"/>
             </connections>
+            <point key="canvasLocation" x="-153" y="52.5"/>
         </view>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
