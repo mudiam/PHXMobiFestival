@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "DYRateView.h"
 
-@class PDDTalk;
+@class PDDTalk, PFObject;
 
-@interface PHXMobiTalkRatingView : UIView <DYRateViewDelegate>
+@interface PHXMobiTalkRatingView : UIView <DYRateViewDelegate, UITextViewDelegate>
 @property (nonatomic,strong) PDDTalk *talk;
+@property (nonatomic,strong) PFObject *rating;
 @end

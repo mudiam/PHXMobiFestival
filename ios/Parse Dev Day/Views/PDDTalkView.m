@@ -78,6 +78,28 @@
 
         self.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
         
+        NSMutableDictionary *existing = [NSMutableDictionary dictionaryWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:@"ratings"]];
+        
+        if ([existing.allKeys containsObject:talk.objectId])
+        {
+            NSString *ratingId = existing[talk.objectId];
+            PFQuery *query = [PFQuery queryWithClassName:@"Rating"];
+            [query getObjectInBackgroundWithId:ratingId block:^(PFObject *rating, NSError *error) {
+                
+                if (error)
+                {
+                    [existing removeObjectForKey:talk.objectId];
+                    
+                    [[NSUserDefaults standardUserDefaults] setObject:existing forKey:@"ratings"];
+                    [[NSUserDefaults standardUserDefaults] synchronize];
+                    return;
+                }
+                
+                phxTalkRatingView.rating = rating;
+            }];
+            
+        }
+    
 
         [favoriteButton addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[favoriteButton(37)]"
                                                                                options:0
