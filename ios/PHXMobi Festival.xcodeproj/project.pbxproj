@@ -697,7 +697,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -712,6 +711,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "71daff53-93c3-445c-8aab-b3a832ea8423";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -728,8 +728,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Parse Inc (289LFBE5L8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Parse Inc (289LFBE5L8)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -737,8 +735,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "91C8B455-8164-4102-A367-79CC2C9FBF1C";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "91C8B455-8164-4102-A367-79CC2C9FBF1C";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -747,8 +743,6 @@
 		97C5F59117A343AE0071C5EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -759,7 +753,6 @@
 				INFOPLIST_FILE = "Parse Dev Day/PHXMobi Festival-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "51f5e2f7-7b79-43a2-9103-35c6d433637b";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -768,8 +761,6 @@
 		97C5F59217A343AE0071C5EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -780,14 +771,12 @@
 				INFOPLIST_FILE = "Parse Dev Day/PHXMobi Festival-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "4d065fb5-3832-4156-8750-54cc0c07b72d";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4d065fb5-3832-4156-8750-54cc0c07b72d";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		E7B2AD9417CEFDFE0007605B /* Ad Hoc */ = {
+		E7B2AD9417CEFDFE0007605B /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -799,8 +788,6 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Parse Inc (289LFBE5L8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Parse Inc (289LFBE5L8)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -808,18 +795,15 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "91C8B455-8164-4102-A367-79CC2C9FBF1C";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "91C8B455-8164-4102-A367-79CC2C9FBF1C";
+				PROVISIONING_PROFILE = "5A126405-AD7C-432C-865A-4F3EB08A4046";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "Ad Hoc";
+			name = AdHoc;
 		};
-		E7B2AD9517CEFDFE0007605B /* Ad Hoc */ = {
+		E7B2AD9517CEFDFE0007605B /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -830,12 +814,10 @@
 				INFOPLIST_FILE = "Parse Dev Day/PHXMobi Festival-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5A126405-AD7C-432C-865A-4F3EB08A4046";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
-			name = "Ad Hoc";
+			name = AdHoc;
 		};
 /* End XCBuildConfiguration section */
 
@@ -845,7 +827,7 @@
 			buildConfigurations = (
 				97C5F58E17A343AE0071C5EC /* Debug */,
 				97C5F58F17A343AE0071C5EC /* Release */,
-				E7B2AD9417CEFDFE0007605B /* Ad Hoc */,
+				E7B2AD9417CEFDFE0007605B /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -855,7 +837,7 @@
 			buildConfigurations = (
 				97C5F59117A343AE0071C5EC /* Debug */,
 				97C5F59217A343AE0071C5EC /* Release */,
-				E7B2AD9517CEFDFE0007605B /* Ad Hoc */,
+				E7B2AD9517CEFDFE0007605B /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
