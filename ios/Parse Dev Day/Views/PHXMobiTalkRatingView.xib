@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -27,18 +27,19 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7j-SM-WQK">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y7j-SM-WQK">
                     <rect key="frame" x="8" y="65" width="288" height="70"/>
                     <color key="backgroundColor" red="0.94565217391304346" green="0.94565217391304346" blue="0.94565217391304346" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-xX-rlm">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-xX-rlm">
                     <rect key="frame" x="247" y="143" width="49" height="30"/>
                     <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     <accessibility key="accessibilityConfiguration">
                         <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                     </accessibility>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="Rate it!">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -52,6 +53,7 @@
                     <accessibility key="accessibilityConfiguration">
                         <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
                     </accessibility>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="Rate it!">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -75,19 +77,12 @@
                 <constraint firstAttribute="trailing" secondItem="2zb-Xi-GNo" secondAttribute="trailing" constant="8" id="sqx-zd-aWs"/>
                 <constraint firstItem="g9s-xX-rlm" firstAttribute="top" secondItem="y7j-SM-WQK" secondAttribute="bottom" constant="8" id="vIt-2y-SGD"/>
             </constraints>
-            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="_comments" destination="y7j-SM-WQK" id="vc5-YN-zl9"/>
                 <outlet property="_commentsLabel" destination="2zb-Xi-GNo" id="ede-Hh-Lkx"/>
                 <outlet property="_dyrateView" destination="6Vc-Ly-ypl" id="tRe-lD-qCa"/>
             </connections>
-            <point key="canvasLocation" x="-340" y="14.5"/>
         </view>
     </objects>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
