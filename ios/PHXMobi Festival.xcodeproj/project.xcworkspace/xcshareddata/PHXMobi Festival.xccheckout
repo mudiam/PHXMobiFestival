@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>FDD0AB810EC5AE519AAE23069C843E679B4B2532</key>
-		<string>ssh://github.com/mudiam/PHXMobiFestival.git</string>
+		<string>https://github.com/mudiam/PHXMobiFestival.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ios/PHXMobi Festival.xcodeproj/project.xcworkspace</string>
+	<string>ios/PHXMobi Festival.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>FDD0AB810EC5AE519AAE23069C843E679B4B2532</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/mudiam/PHXMobiFestival.git</string>
+	<string>https://github.com/mudiam/PHXMobiFestival.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
