@@ -14,6 +14,7 @@
 @dynamic startTime;
 @dynamic endTime;
 @dynamic talks;
+@dynamic visibility;
 
 + (NSString *)parseClassName {
     return @"Slot";

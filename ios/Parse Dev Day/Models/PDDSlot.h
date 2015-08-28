@@ -13,4 +13,5 @@
 @property (strong, nonatomic) NSDate *startTime;
 @property (strong, nonatomic) NSDate *endTime;
 @property (strong, nonatomic) NSArray *talks;
+@property (strong, nonatomic) NSNumber *visibility;
 @end
