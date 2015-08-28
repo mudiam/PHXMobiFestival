@@ -64,7 +64,7 @@
                                                                      options:0
                                                                      metrics:nil
                                                                        views:NSDictionaryOfVariableBindings(photoView)]];
-        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"|-10-[photoView(80)]-[detailView]-5-|"
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[photoView(80)]-[detailView(>=0)]-5-|"
                                                                      options:NSLayoutFormatAlignAllCenterY
                                                                      metrics:nil
                                                                        views:NSDictionaryOfVariableBindings(photoView, detailView)]];
@@ -72,6 +72,19 @@
                                                                      options:NSLayoutFormatAlignAllLeft
                                                                      metrics:nil
                                                                        views:NSDictionaryOfVariableBindings(nameLabel, companyLabel, twitterLabel)]];
+
+        [detailView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[nameLabel]"
+                                                                           options:NSLayoutFormatAlignAllLeft
+                                                                           metrics:nil
+                                                                             views:NSDictionaryOfVariableBindings(nameLabel, companyLabel, twitterLabel)]];
+        [detailView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[companyLabel]"
+                                                                           options:NSLayoutFormatAlignAllLeft
+                                                                           metrics:nil
+                                                                             views:NSDictionaryOfVariableBindings(nameLabel, companyLabel, twitterLabel)]];
+        [detailView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[twitterLabel]"
+                                                                           options:NSLayoutFormatAlignAllLeft
+                                                                           metrics:nil
+                                                                             views:NSDictionaryOfVariableBindings(nameLabel, companyLabel, twitterLabel)]];
 
         // Fill in data
         self.photoView.file = speaker.photo;
