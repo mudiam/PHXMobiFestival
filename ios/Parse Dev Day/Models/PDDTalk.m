@@ -33,12 +33,19 @@
 }
 
 + (void)findAllInBackgroundWithBlock:(PFArrayResultBlock)resultBlock {
+    PFQuery *slotQuery = [PDDSlot query];
+    [slotQuery whereKey:@"visibility" equalTo:@(YES)];
+
     PFQuery *query = [PDDTalk query];
     [query includeKey:@"room"];
     [query includeKey:@"slot"];
     [query includeKey:@"speakers"];
+
+    [query whereKey:@"slot" matchesQuery:slotQuery];
+
     [query setCachePolicy:kPFCachePolicyNetworkElseCache];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *talks, NSError *error) {
+    [query findObjectsInBackgroundWithBlock:^(NSArray *talks, NSError *error)
+    {
         resultBlock([[self class] sortedTalkArray:talks], error);
     }];
 }
