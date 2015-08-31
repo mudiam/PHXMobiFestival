@@ -176,6 +176,7 @@
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
     [self.rawTalks enumerateObjectsUsingBlock:^(PDDTalk *talk, NSUInteger idx, BOOL *stop) {
         id groupKey = talk.slot.startTime;
+        
         [self _setObject:talk inArray:groupKey inDictionary:dictionary];
     }];
 
