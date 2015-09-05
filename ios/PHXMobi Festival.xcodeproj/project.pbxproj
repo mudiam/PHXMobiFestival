@@ -90,6 +90,7 @@
 		9E45DDAB19AAE3EA00939255 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45DDA819AAE3EA00939255 /* Parse.framework */; };
 		9E45DDAC19AAE3EA00939255 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E45DDA919AAE3EA00939255 /* ParseFacebookUtils.framework */; };
 		9E6B2AD319BF718C006426D2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E37D42D19B6CD1600D3579A /* Icon.png */; };
+		9EC014FF1B98E72700134FA4 /* PDDSponsors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC014FE1B98E72700134FA4 /* PDDSponsors.m */; };
 		9EC79DBC19BE34D0004EF603 /* 178-city.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC79DBA19BE34D0004EF603 /* 178-city.png */; };
 		9EC79DBD19BE34D0004EF603 /* 178-city@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC79DBB19BE34D0004EF603 /* 178-city@2x.png */; };
 		9EE2002819C2145100EB9343 /* PHXTwitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EE2002619C2145100EB9343 /* PHXTwitterViewController.m */; };
@@ -227,6 +228,8 @@
 		9E45DDA719AAE3EA00939255 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		9E45DDA819AAE3EA00939255 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9E45DDA919AAE3EA00939255 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		9EC014FD1B98E6B500134FA4 /* PDDSponsors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDDSponsors.h; sourceTree = "<group>"; };
+		9EC014FE1B98E72700134FA4 /* PDDSponsors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDDSponsors.m; sourceTree = "<group>"; };
 		9EC79DBA19BE34D0004EF603 /* 178-city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "178-city.png"; sourceTree = "<group>"; };
 		9EC79DBB19BE34D0004EF603 /* 178-city@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "178-city@2x.png"; sourceTree = "<group>"; };
 		9EE2002519C2145100EB9343 /* PHXTwitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PHXTwitterViewController.h; sourceTree = "<group>"; };
@@ -489,6 +492,8 @@
 				97C5F59F17A3467E0071C5EC /* PDDRoom.m */,
 				97C5F5A117A346A00071C5EC /* PDDSlot.h */,
 				97C5F5A217A346A00071C5EC /* PDDSlot.m */,
+				9EC014FD1B98E6B500134FA4 /* PDDSponsors.h */,
+				9EC014FE1B98E72700134FA4 /* PDDSponsors.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -643,6 +648,7 @@
 				97C5F57C17A343AE0071C5EC /* PDDScheduleViewController.m in Sources */,
 				9E29BF8519BAF86D0041D3E8 /* PHXInfoViewController.m in Sources */,
 				97C5F58317A343AE0071C5EC /* PDDListViewController.m in Sources */,
+				9EC014FF1B98E72700134FA4 /* PDDSponsors.m in Sources */,
 				97C5F59A17A345BA0071C5EC /* PDDTalk.m in Sources */,
 				97C5F59D17A346190071C5EC /* PDDSpeaker.m in Sources */,
 				9735833417BEA1ED0001DBF9 /* PDDConstants.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "PHXInfoViewController.h"
+#import "PDDSponsors.h"
 
 @interface PHXInfoViewController ()
 
@@ -37,10 +38,21 @@
 //    self.view = view;
 //    self.view.backgroundColor = [UIColor whiteColor];
 
+    //TODO: Get the spologo from the web.
     
     UIImageView *bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Sponsors"]];
     bgView.contentMode = UIViewContentModeScaleToFill;
     self.view = bgView;
+    
+    
+   // [self refreshLogo];
+}
+
+- (void)refreshLogo
+{
+    [PDDSponsors findAllInBackgroundWithBlock:^(NSArray *sponsors, NSError *error) {
+      
+    }];
 }
 
 
