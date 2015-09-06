@@ -48,12 +48,12 @@
    // [self refreshLogo];
 }
 
-- (void)refreshLogo
-{
-    [PDDSponsors findAllInBackgroundWithBlock:^(NSArray *sponsors, NSError *error) {
-      
-    }];
-}
+//- (void)refreshLogo
+//{
+//    [PDDSponsors findAllInBackgroundWithBlock:^(NSArray *sponsors, NSError *error) {
+//      
+//    }];
+//}
 
 
 - (void)viewDidLoad
